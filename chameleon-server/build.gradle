@@ -104,19 +104,13 @@ dependencies {
 sourceSets {
     main {
         java {
-            srcDir 'src'
             exclude '**/_2/**'
         }
     }
 }
 
 test {
-    test {
-        useJUnitPlatform()
-        testLogging {
-            events "passed", "skipped", "failed"
-        }
-    }
+    useJUnitPlatform()
 }
 
 spotless {
